@@ -1,53 +1,54 @@
-<p align="center">
-  <img src="public/screenshot.png" alt="Screenshot">
-</p>
+# Netlify Content Ops Starter 
 
-<p align="center">
-  <img src="https://img.shields.io/static/v1?label=PRs&message=welcome&style=for-the-badge&color=24B36B&labelColor=000000" alt="PRs welcome!" />
-  <img alt="License" src="https://img.shields.io/github/license/jkytoela/next-startd?style=for-the-badge&color=24B36B&labelColor=000000">
-  <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/jkytoela/next-startd?style=for-the-badge&color=24B36B&labelColor=000000">
-</p>
-<br>
+![Content Ops Starter](https://assets.stackbit.com/docs/content-ops-starter-thumb.png)
 
-A free Next.js TypeScript landing page template for SaaS products, online services and more.
+Netlify starter that's made for customization with a flexible content model, component library, [visual editing](https://docs.netlify.com/visual-editor/overview/) and [Git Content Source](https://docs.netlify.com/create/content-sources/git/).
 
-<a href="https://next-startd.vercel.app">Live demo</a>
+**⚡ View demo:** [https://content-ops-starter.netlify.app/](https://content-ops-starter.netlify.app/)
 
-- ⚡ **Next.js** — The React Framework
-- 🔥 **next-seo** — Manage SEO easily
-- 💡 **Twind** — The smallest, fastest, most feature complete Tailwind-in-JS solution in existence
-- 📏 **ESLint** — Pluggable JavaScript linter
-- 💖 **Prettier** — Opinionated Code Formatter
-- 🐶 **Husky** — Use git hooks with ease
-- 📄 **Commitizen** — Conventional commit messages CLI
-- 🚓 **Commitlint** — Lint commit messages
-- 🖌 **Renovate** — Dependency update tool
-- 🚫 **lint-staged** — Run linters against staged git files
-- 🗂 **Absolute import** — Import folders and files using the `@` prefix
+## Deploying to Netlify
 
-## 🚀 Getting started
+If you click "Deploy to Netlify" button, it will create a new repo for you that looks exactly like this one, and sets that repo up immediately for deployment on Netlify.
 
-If you're logged in, easiest way to get started is to [click here](https://github.com/jkytoela/next-startd/generate).
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/content-ops-starter)
 
-Run the following commands inside the project folder:
+## Develop with Netlify Visual Editor Locally
 
-1. `yarn`
-2. `yarn dev`
+The typical development process is to begin by working locally. Clone this repository, then run `npm install` in its root directory.
 
-To view the project open `http://localhost:3000`
+Run the Next.js development server:
 
+```txt
+cd content-ops-starter
+npm run dev
+```
 
-## 🤝 Contributing
+Install the [Netlify Visual Editor CLI](https://www.npmjs.com/package/@stackbit/cli). Then open a new terminal window in the same project directory and run the Netlify visual editor dev server:
 
-1. Fork this repository
-2. Create your branch: `git checkout -b my-new-feature`
-3. Commit your changes: `git commit -m 'Add some feature'`
-4. Push to the branch: `git push origin my-new-feature`
+```txt
+npm install -g @stackbit/cli
+stackbit dev
+```
 
-Consider contributing to the original TypeScript Starter, which you can find [here](https://github.com/jpedroschmitz).
+This outputs your own Netlify visual editor URL. Open this, register, or sign in, and you will be directed to Netlify's visual editor for your new project.
 
-**After your pull request is merged**, you can safely delete your branch.
+![Next.js Dev + Visual Editor Dev](https://assets.stackbit.com/docs/next-dev-stackbit-dev.png)
 
-## 📝 License
+## Building for production
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for more information.
+To build a static site for production, run the following command
+
+```shell
+npm run build
+```
+
+## Next Steps
+
+Here are a few suggestions on what to do next if you're new to Netlify visual editor:
+
+- Learn [Netlify visual editor overview](https://docs.netlify.com/visual-editor/visual-editing/)
+- Check [Netlify visual editor reference documentation](https://visual-editor-reference.netlify.com/)
+
+## Support
+
+If you get stuck along the way, get help in our [support forums](https://answers.netlify.com/).

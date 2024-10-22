@@ -1,7 +1,6 @@
 {
-  "extends": ["config:base"],
-  "semanticCommits": true,
-  "stabilityDays": 3,
-  "prCreation": "not-pending",
-  "labels": ["type: dependencies"]
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "local>netlify-templates/renovate-config"
+  ]
 }
