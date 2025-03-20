@@ -325,3 +325,11 @@
         }
     }
 }
+
+.img-logo-width {
+    max-width: 12%;
+}
+
+.border-round img{
+    border-radius: 12px;
+}
